@@ -15,15 +15,15 @@ class Solution
     string reverseWord(string str)
     {
         // Your code goes here
-       int n = str.size();
-       int start = 0;
-       int end = n-1;
-       while(start <= end) {
-           swap(str[start],str[end]);
-           start++;
-           end--;
-       }
-       return str;
+        int n = str.size();
+        int start = 0;
+        int end = n-1;
+        while(start <= end) {
+            swap(str[start],str[end]);
+            start++;
+            end--;
+        }
+        return str;
     }
 };
 
