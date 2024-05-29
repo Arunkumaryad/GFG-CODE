@@ -17,12 +17,11 @@ class Solution{
         for(int i=0;i<n;i++) {
             st.insert(arr1[i]);
         }
-        
-        for(int j=0;j<m;j++) {
-            st.insert(arr2[j]);
+        for(int i=0;i<m;i++) {
+            st.insert(arr2[i]);
         }
         vector<int>ans;
-        for(auto it : st) {
+        for(auto it: st) {
             ans.push_back(it);
         }
         return ans;
