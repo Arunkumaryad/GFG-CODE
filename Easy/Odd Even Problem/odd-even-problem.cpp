@@ -1,16 +1,16 @@
 //{ Driver Code Starts
-// Initial template for C++
 #include <bits/stdc++.h>
 using namespace std;
 
+
 // } Driver Code Ends
-// User function template for c++
+
 class Solution {
   public:
-    string oddEven(string S) {
+    string oddEven(string s) {
         // code here
-        map<char,int> mp;
-        for(char i:S){
+         map<char,int> mp;
+        for(char i:s){
             mp[i]++;
         }
         
@@ -26,17 +26,22 @@ class Solution {
     }
 };
 
+
 //{ Driver Code Starts.
+
 int main() {
     int t;
-    cin >> t;
+    scanf("%d ", &t);
     while (t--) {
-        string S;
-        cin >> S;
-        Solution ob;
-        cout << ob.oddEven(S) << endl;
+
+        string s;
+        getline(cin, s);
+
+        Solution obj;
+        string res = obj.oddEven(s);
+
+        cout << res << "\n";
     }
-    return 0;
 }
 
 // } Driver Code Ends
