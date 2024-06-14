@@ -3,23 +3,24 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+
 // } Driver Code Ends
 // User function Template for C++
 class Solution {
   public:
-    string armstrongNumber(int n){
+    string armstrongNumber(int n) {
         // code here
-        int sum = 0;
         int num = n;
+        int sum = 0;
         while(num) {
             int digit = num % 10;
             sum += (digit*digit*digit);
             num /= 10;
         }
         if(sum == n) {
-            return "Yes";
+            return "true";
         }
-        return "No";
+      return "false";
     }
 };
 
